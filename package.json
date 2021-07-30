@@ -1,0 +1,27 @@
+{
+  "name": "@dothq/kit-scss",
+  "version": "1.0.0",
+  "description": "bingus",
+  "main": "index.js",
+  "repository": "https://github.com/dothq/kit.git",
+  "author": "Dot HQ <contact@dothq.co>",
+  "license": "MPL-2.0",
+  "private": true,
+  "dependencies": {
+    "sass": "^1.36.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "sass --watch kit-scss:dist"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "glob": "^7.1.7",
+    "mini-css-extract-plugin": "^2.1.0",
+    "sass-loader": "^12.1.0",
+    "ttf-loader": "^1.0.2",
+    "webpack": "^5.47.0",
+    "webpack-cli": "^4.7.2"
+  }
+}

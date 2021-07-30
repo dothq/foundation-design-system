@@ -1,0 +1,13 @@
+$primary-colour: #1662d3;
+$dark-primary-colour: #1757b6;
+$complement-primary-colour: #ffffff;
+$secondary-colour: #ffffff;
+$dark-secondary-colour: rgba(255, 255, 255, 0.5);
+$complement-secondary-colour: #000000;
+$link-colour: #1662d3;
+
+:root {
+  --primary-colour: #{$primary-colour};
+  --dark-primary-colour: #{$dark-primary-colour};
+  --complement-primary-colour: #{$complement-primary-colour};
+}
