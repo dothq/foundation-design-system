@@ -1,9 +1,9 @@
 {
-  "name": "@dothq/kit-scss",
+  "name": "@dothq/design",
   "version": "1.0.0",
-  "description": "bingus",
+  "description": "🌈 Dot UI is a next-generation UI and components library for React. ",
   "main": "index.js",
-  "repository": "https://github.com/dothq/kit.git",
+  "repository": "https://github.com/dothq/design.git",
   "author": "Dot HQ <contact@dothq.co>",
   "license": "MPL-2.0",
   "private": true,
