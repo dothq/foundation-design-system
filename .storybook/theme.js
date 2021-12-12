@@ -5,4 +5,6 @@ export default create({
   brandTitle: 'Dot UI',
   brandUrl: 'https://dothq.co',
   brandImage: 'https://staging.dothq.co/static/icons/57x57.png',
+
+  colorSecondary: 'rgb(22,98,211)'
 });
