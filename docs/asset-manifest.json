@@ -4,9 +4,9 @@
     "0.7cffe673.iframe.bundle.js.map": "./0.7cffe673.iframe.bundle.js.map",
     "1.e1c44195.iframe.bundle.js": "./1.e1c44195.iframe.bundle.js",
     "2.8633e69d.iframe.bundle.js": "./2.8633e69d.iframe.bundle.js",
-    "main.css": "./static/css/main.bee5bd9d.chunk.css",
-    "main.js": "./main.5b075e4b.iframe.bundle.js",
-    "main.css.map": "./static/css/main.bee5bd9d.chunk.css.map",
+    "main.css": "./static/css/main.6ec79891.chunk.css",
+    "main.js": "./main.1d130815.iframe.bundle.js",
+    "main.css.map": "./static/css/main.6ec79891.chunk.css.map",
     "runtime~main.js": "./runtime~main.3816fc1a.iframe.bundle.js",
     "vendors~main.js": "./vendors~main.d0d07b62.iframe.bundle.js",
     "vendors~main.js.map": "./vendors~main.d0d07b62.iframe.bundle.js.map",
@@ -17,20 +17,12 @@
     "0.7cffe673.iframe.bundle.js.LICENSE.txt": "./0.7cffe673.iframe.bundle.js.LICENSE.txt",
     "7.306259e7.iframe.bundle.js.LICENSE.txt": "./7.306259e7.iframe.bundle.js.LICENSE.txt",
     "iframe.html": "./iframe.html",
-    "static/media/code-brackets.2e1112d7.svg": "./static/media/code-brackets.2e1112d7.svg",
-    "static/media/colors.a4bd0486.svg": "./static/media/colors.a4bd0486.svg",
-    "static/media/comments.a3859089.svg": "./static/media/comments.a3859089.svg",
-    "static/media/direction.b770f9af.svg": "./static/media/direction.b770f9af.svg",
-    "static/media/flow.edad2ac1.svg": "./static/media/flow.edad2ac1.svg",
-    "static/media/plugin.d494b228.svg": "./static/media/plugin.d494b228.svg",
-    "static/media/repo.6d496322.svg": "./static/media/repo.6d496322.svg",
-    "static/media/stackalt.dba9fbb3.svg": "./static/media/stackalt.dba9fbb3.svg",
     "vendors~main.d0d07b62.iframe.bundle.js.LICENSE.txt": "./vendors~main.d0d07b62.iframe.bundle.js.LICENSE.txt"
   },
   "entrypoints": [
     "runtime~main.3816fc1a.iframe.bundle.js",
     "vendors~main.d0d07b62.iframe.bundle.js",
-    "static/css/main.bee5bd9d.chunk.css",
-    "main.5b075e4b.iframe.bundle.js"
+    "static/css/main.6ec79891.chunk.css",
+    "main.1d130815.iframe.bundle.js"
   ]
 }
