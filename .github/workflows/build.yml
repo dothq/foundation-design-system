@@ -16,5 +16,11 @@ jobs:
                   node-version: 16.x
                   cache: "yarn"
             - run: yarn
-            - run: FIGMA_TOKEN=${{ secrets.FIGMA_TOKEN }} FIGMA_FILE_KEY=${{ secrets.FIGMA_FILE_KEY }} make compile-from-figma
-            - run: NPM_TOKEN=${{ secrets.NPM_TOKEN }} IGNORE_TOTP=1 make publish-all
+            - run: make compile-from-figma
+              env:
+                  FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+                  FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+            - run: make publish-all
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  IGNORE_TOTP: 1
