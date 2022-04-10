@@ -42,7 +42,8 @@ const format = (str: string, plugins?: string[]) => {
 const reactSvg = (Name: string, svg: string) => {
 	svg = svg
 		.replace(/fill-rule="/g, `fillRule="`)
-		.replace(/clip-rule="/g, `clipRule="`);
+		.replace(/clip-rule="/g, `clipRule="`)
+		.replace(/clip-path="/g, `clipPath="`);
 
 	return format(
 		`
