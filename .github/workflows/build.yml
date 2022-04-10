@@ -21,7 +21,9 @@ jobs:
                   FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
                   FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
             - run: yarn version --patch --no-commit-hooks --no-git-tag-version
-            - run: echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' > .npmrc
+            - run: |
+                  echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' > .npmrc
+                  echo 'registry: https://registry.npmjs.org/' >> .yarnrc
             - run: make publish-all
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
