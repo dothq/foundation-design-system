@@ -20,8 +20,15 @@ jobs:
               env:
                   FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
                   FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
-            - run: yarn version --patch
+            - run: yarn version --patch --no-commit-hooks --no-git-tag-version
             - run: make publish-all
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
                   IGNORE_TOTP: 1
+            - name: Upload changes...
+              uses: EndBug/add-and-commit@v6
+              with:
+                  author_email: dothq-robot@users.noreply.github.com
+                  author_name: dothq-robot
+                  token: ${{ secrets.ROBOT_TOKEN }}
+                  message: "🖼️ Update Foundation Icons from Figma"
