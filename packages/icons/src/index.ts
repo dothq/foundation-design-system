@@ -184,7 +184,7 @@ import WifiIssues3 from "./WifiIssues3.svg";
 import ZoomIn from "./ZoomIn.svg";
 import ZoomOut from "./ZoomOut.svg";
 
-export default {
+export {
 	Home,
 	Back,
 	Forward,

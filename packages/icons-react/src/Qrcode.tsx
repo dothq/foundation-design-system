@@ -44,10 +44,10 @@ export const Qrcode = (props: React.SVGProps<SVGSVGElement>) => {
 				stroke-linecap="round"
 				stroke-linejoin="round"
 			/>
-			<rect x="9" y="9" width="3" height="3" rx="1" fill="black" />
-			<rect x="13" y="9" width="3" height="3" rx="1" fill="black" />
-			<rect x="13" y="13" width="3" height="3" rx="1" fill="black" />
-			<rect x="9" y="13" width="3" height="3" rx="1" fill="black" />
+			<rect x="9" y="9" width="3" height="3" rx="1" />
+			<rect x="13" y="9" width="3" height="3" rx="1" />
+			<rect x="13" y="13" width="3" height="3" rx="1" />
+			<rect x="9" y="13" width="3" height="3" rx="1" />
 		</svg>
 	);
 };

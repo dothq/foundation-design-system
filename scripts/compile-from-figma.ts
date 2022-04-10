@@ -43,7 +43,8 @@ const reactSvg = (Name: string, svg: string) => {
 	svg = svg
 		.replace(/fill-rule="/g, `fillRule="`)
 		.replace(/clip-rule="/g, `clipRule="`)
-		.replace(/clip-path="/g, `clipPath="`);
+		.replace(/clip-path="/g, `clipPath="`)
+		.replace(/fill="black"/g, ``);
 
 	return format(
 		`
@@ -113,8 +114,8 @@ const main = async () => {
 
 	let reactDeclaration: any[] = [];
 
-	let svgIndexFooter = ["export default {"];
-	let reactIndexFooter = ["export default {"];
+	let svgIndexFooter = ["export {"];
+	let reactIndexFooter = ["export {"];
 
 	const icons = [];
 

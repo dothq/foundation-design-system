@@ -184,7 +184,7 @@ import { WifiIssues3 } from "./WifiIssues3";
 import { ZoomIn } from "./ZoomIn";
 import { ZoomOut } from "./ZoomOut";
 
-export default {
+export {
 	Home,
 	Back,
 	Forward,
