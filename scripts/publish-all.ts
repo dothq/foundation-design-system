@@ -53,6 +53,7 @@ const main = async () => {
 			const proc = spawn("yarn", ["run", "build"], {
 				stdio: "inherit",
 				cwd: pkgDir,
+				env: process.env,
 			});
 
 			proc.on("close", (e) => {
@@ -73,6 +74,7 @@ const main = async () => {
 				{
 					stdio: "inherit",
 					cwd: pkgDir,
+					env: process.env,
 				}
 			);
 
