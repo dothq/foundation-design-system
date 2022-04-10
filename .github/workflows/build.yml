@@ -18,4 +18,4 @@ jobs:
         cache: 'yarn'
     - run: yarn
     - run: make compile-from-figma
-    - run: make publish-all
+    - run: IGNORE_TOTP=true make publish-all
