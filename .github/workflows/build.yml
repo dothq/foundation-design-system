@@ -20,6 +20,7 @@ jobs:
               env:
                   FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
                   FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+            - run: yarn version --patch
             - run: make publish-all
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
