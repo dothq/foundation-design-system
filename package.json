@@ -1,6 +1,6 @@
 {
 	"name": "@fdn-ui/fdn-ui",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"private": true,
 	"repository": "https://github.com/dothq/foundation-design-system",
 	"author": "Dot HQ <contact@dothq.co>",
