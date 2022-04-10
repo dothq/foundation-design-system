@@ -19,11 +19,17 @@ const main = async () => {
 	);
 	const { version } = JSON.parse(packageJson);
 
-	const { totp } = await prompts({
-		type: "text",
-		name: "totp",
-		message: "Enter NPM one time passcode (if required)",
-	});
+	let totp = "";
+
+	if (!process.env.IGNORE_TOTP) {
+		const res = await prompts({
+			type: "text",
+			name: "totp",
+			message: "Enter NPM one time passcode (if required)",
+		});
+
+		totp = res.totp;
+	}
 
 	for await (const pkg of packages) {
 		const pkgDir = resolve(packagesDir, pkg);
