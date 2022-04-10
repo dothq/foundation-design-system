@@ -1,21 +1,20 @@
 name: Build icons
 
 on:
-  push:
-    branches: [ main ]
+    push:
+        branches: [main]
 
 jobs:
-  build:
+    build:
+        runs-on: ubuntu-latest
 
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16.x
-        cache: 'yarn'
-    - run: yarn
-    - run: make compile-from-figma
-    - run: IGNORE_TOTP=true make publish-all
+        steps:
+            - uses: actions/checkout@v3
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 16.x
+                  cache: "yarn"
+            - run: yarn
+            - run: FIGMA_TOKEN=${{ secrets.FIGMA_TOKEN }} FIGMA_FILE_KEY=${{ secrets.FIGMA_FILE_KEY }} make compile-from-figma
+            - run: NPM_TOKEN=${{ secrets.NPM_TOKEN }} IGNORE_TOTP=1 make publish-all
