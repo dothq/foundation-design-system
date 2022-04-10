@@ -11,7 +11,7 @@ export const Phone = (props: React.SVGProps<SVGSVGElement>) => {
 			xmlns="http://www.w3.org/2000/svg"
 			{...props}
 		>
-			<g clip-path="url(#clip0_1509_42)">
+			<g clipPath="url(#clip0_1509_42)">
 				<path
 					d="M6.5 12C6.22386 12 6 12.2239 6 12.5C6 12.7761 6.22386 13 6.5 13H9.5C9.77614 13 10 12.7761 10 12.5C10 12.2239 9.77614 12 9.5 12H6.5Z"
 					fill="black"

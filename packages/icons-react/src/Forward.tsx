@@ -11,7 +11,7 @@ export const Forward = (props: React.SVGProps<SVGSVGElement>) => {
 			xmlns="http://www.w3.org/2000/svg"
 			{...props}
 		>
-			<g clip-path="url(#clip0_1509_26)">
+			<g clipPath="url(#clip0_1509_26)">
 				<path
 					fillRule="evenodd"
 					clipRule="evenodd"
