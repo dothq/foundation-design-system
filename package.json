@@ -1,72 +1,22 @@
 {
-  "name": "@dothq/design",
-  "version": "1.0.0",
-  "description": "🌈 Dot UI is a next-generation UI and components library for React. ",
-  "main": "index.js",
-  "repository": "https://github.com/dothq/design.git",
-  "author": "Dot HQ <contact@dothq.co>",
-  "license": "MPL-2.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public -o docs",
-    "prepare": "husky install"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@storybook/addon-actions": "^6.4.9",
-    "@storybook/addon-essentials": "^6.4.9",
-    "@storybook/addon-links": "^6.4.9",
-    "@storybook/addons": "^6.4.9",
-    "@storybook/node-logger": "^6.4.9",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.4.9",
-    "@storybook/theming": "^6.4.9",
-    "husky": "^7.0.0"
-  }
+	"name": "@fdn-ui/fdn-ui",
+	"version": "0.0.7",
+	"private": true,
+	"repository": "https://github.com/dothq/foundation-design-system",
+	"author": "Dot HQ <contact@dothq.co>",
+	"license": "MPL-2.0",
+	"devDependencies": {
+		"@types/node": "^17.0.23",
+		"@types/prettier": "^2.4.4",
+		"@types/prompts": "^2.0.14",
+		"@types/rimraf": "^3.0.2",
+		"axios": "^0.26.1",
+		"dotenv": "^16.0.0",
+		"prettier": "^2.6.1",
+		"prettier-plugin-organize-imports": "^2.3.4",
+		"prompts": "^2.4.2",
+		"rimraf": "^3.0.2",
+		"ts-node": "^10.7.0",
+		"typescript": "^4.6.3"
+	}
 }

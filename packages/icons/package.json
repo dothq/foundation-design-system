@@ -1,0 +1,8 @@
+{
+  "name": "@fdn-ui/icons",
+  "version": "0.0.7",
+  "main": "src/index.ts",
+  "repository": "https://github.com/dothq/foundation-design-system",
+  "author": "Dot HQ <contact@dothq.co>",
+  "license": "MPL-2.0"
+}
